@@ -1,0 +1,85 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+  title Vapas
+  meta(name='theme-color' content='#f95fea')
+  meta(name='twitter:image' content='/assets/img/smallBanner.png')
+  meta(name='twitter:title' content='Vapas')
+  meta(name='description' content='Vapas, the open source repo made for developers.')
+  meta(property='og:type' content='website')
+  meta(name='twitter:description' content='Vapas, the open source repo made for developers.')
+  meta(property='og:image' content='/assets/img/smallBanner.png')
+  meta(name='twitter:card' content='summary_large_image')
+  link(rel='icon' type='image/png' sizes='1024x1024' href='/assets/img/logoRounded.png')
+  link(rel='icon' type='image/png' sizes='1024x1024' href='/assets/img/logoRounded.png')
+  link(rel='icon' type='image/png' sizes='1024x1024' href='/assets/img/logoRounded.png')
+  link(rel='icon' type='image/png' sizes='1024x1024' href='/assets/img/logoRounded.png')
+  link(rel='icon' type='image/png' sizes='1024x1024' href='/assets/img/logoRounded.png')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css')
+  link(rel='manifest' href='/manifest.json')
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css')
+  link(rel='stylesheet' href='/assets/css/styles.min.css')
+.container(style='margin-bottom: 3vh;margin-top: 3vh;')
+  h5#shortDesc tweakShortDesc
+  p#longDesc tweakLongDesc
+hr
+.container
+  h5 Screenshots
+  #screenshots.carousel.slide(data-ride='carousel')
+    .carousel-inner(role='listbox')
+    div
+      // Start: Previous
+      a.carousel-control-prev(href='#screenshots' role='button' data-slide='prev')
+        span.carousel-control-prev-icon
+        span.sr-only Previous
+      // End: Previous
+      // Start: Next
+      a.carousel-control-next(href='#screenshots' role='button' data-slide='next')
+        span.carousel-control-next-icon
+        span.sr-only Next
+      // End: Next
+    ol.carousel-indicators
+hr
+.container(style='margin-bottom: 1vh;')
+  h5 Known Issues
+  ul#issuesList
+hr
+.container(style='margin-top: 1vh;margin-bottom: 1vh;')
+  h5 Changelog
+  ul#changeList
+hr
+.container(style='margin-top: 1vh;')
+  h5 Package Infomation
+  .row
+    .col
+      p.text-left Version
+    .col
+      p#version.text-right 0
+  .row
+    .col
+      p.text-left Release Date
+    .col
+      p#releaseDate.text-right 0
+  .row
+    .col
+      p.text-left Price
+    .col
+      p#price.text-right 0
+hr
+.container(style='margin-top: 1vh;')
+  h5 Developer Infomation
+  .row
+    .col
+      p.text-left Developer
+    .col
+      p#version.text-right 0
+  .row
+    .col
+      a(href='#')
+        p.text-left Support (Link Name) &gt;
+hr
+.container.d-flex.flex-column.justify-content-center.align-items-center(style='margin-top: 3vh;')
+  img.img-fluid(src='/assets/img/footerIcon.png' style='width: 45%;height: 45%;')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js')
