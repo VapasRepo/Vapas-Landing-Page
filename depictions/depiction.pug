@@ -43,11 +43,11 @@ hr
 hr
 .container(style='margin-bottom: 1vh;')
   h5 Known Issues
-  ul#issuesList
+  ul#issuesList #{issueList}
 hr
 .container(style='margin-top: 1vh;margin-bottom: 1vh;')
   h5 Changelog
-  ul#changeList
+  ul#changeList #{changeList}
 hr
 .container(style='margin-top: 1vh;')
   h5 Package Infomation
@@ -76,8 +76,8 @@ hr
       p#developer.text-right #{developer}
   .row
     .col
-      a(href='#{supportLink}')
-        p.text-left Support (Link Name) &gt;
+      a(href=#{supportLink})
+        p.text-left Support (#{supportName}) &gt;
 hr
 .container.d-flex.flex-column.justify-content-center.align-items-center(style='margin-top: 3vh;')
   img.img-fluid(src='/assets/img/footerIcon.png' style='width: 45%;height: 45%;')
