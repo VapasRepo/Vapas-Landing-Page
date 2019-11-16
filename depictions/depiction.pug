@@ -21,8 +21,8 @@ head
   link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css')
   link(rel='stylesheet' href='/assets/css/styles.min.css')
 .container(style='margin-bottom: 3vh;margin-top: 3vh;')
-  h5#shortDesc tweakShortDesc
-  p#longDesc tweakLongDesc
+  h5#shortDesc #{tweakShortDesc}
+  p#longDesc #{tweakLongDesc}
 hr
 .container
   h5 Screenshots
@@ -55,17 +55,17 @@ hr
     .col
       p.text-left Version
     .col
-      p#version.text-right 0
+      p#version.text-right #{version}
   .row
     .col
       p.text-left Release Date
     .col
-      p#releaseDate.text-right 0
+      p#releaseDate.text-right #{releaseDate}
   .row
     .col
       p.text-left Price
     .col
-      p#price.text-right 0
+      p#price.text-right #{price}
 hr
 .container(style='margin-top: 1vh;')
   h5 Developer Infomation
@@ -73,10 +73,10 @@ hr
     .col
       p.text-left Developer
     .col
-      p#version.text-right 0
+      p#developer.text-right #{developer}
   .row
     .col
-      a(href='#')
+      a(href='#{supportLink}')
         p.text-left Support (Link Name) &gt;
 hr
 .container.d-flex.flex-column.justify-content-center.align-items-center(style='margin-top: 3vh;')
