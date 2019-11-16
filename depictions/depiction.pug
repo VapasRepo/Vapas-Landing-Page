@@ -43,11 +43,16 @@ hr
 hr
 .container(style='margin-bottom: 1vh;')
   h5 Known Issues
-  ul#issuesList #{issueList}
+  ul#issuesList
+    each val in {issueList}
+      li= val
 hr
 .container(style='margin-top: 1vh;margin-bottom: 1vh;')
   h5 Changelog
-  ul#changeList #{changeList}
+  p Version #{version}
+  ul#changeList
+    each val in {changeList}
+      li= val
 hr
 .container(style='margin-top: 1vh;')
   h5 Package Infomation
@@ -76,7 +81,7 @@ hr
       p#developer.text-right #{developer}
   .row
     .col
-      a(href=#{supportLink})
+      a(href=supportLink)
         p.text-left Support (#{supportName}) &gt;
 hr
 .container.d-flex.flex-column.justify-content-center.align-items-center(style='margin-top: 3vh;')
